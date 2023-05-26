@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import '../../controller/userposts_controller.dart';
 import '../../models/posts.dart';
 
-class ProfilePosts extends StatelessWidget {
-  const ProfilePosts({
+class ProfilePosts3 extends StatelessWidget {
+  const ProfilePosts3({
     super.key,
   });
 
@@ -34,29 +34,23 @@ class ProfilePosts extends StatelessWidget {
             // LinearProgressIndicator
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: LinearProgressIndicator(
-                value: 20 / 200, // Raised amount / Total amount
-                backgroundColor: Colors.grey[200],
-                valueColor: const AlwaysStoppedAnimation<Color>(
-                    Color.fromRGBO(88, 101, 242, 1.0)),
-                minHeight: 10,
-              ),
+
             ),
             const SizedBox(height: 8),
-            // "Liked by Huge and 45 others" Text
+            // "Liked by Huge and 200 others" Text
             const Text(
-              'Liked by Huge and 200 others',
+              'Liked by Binuli and 132 others',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 10,
               ),
             ),
             const SizedBox(height: 8),
-            // Contributors avatars and "150 contributors" Text
+            // Likes avatars and "150 Likes" Text
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // List of contributors' avatars
+                // List of Likes' avatars
                 Expanded(
                   child: Row(
                     children: const [
@@ -75,31 +69,16 @@ class ProfilePosts extends StatelessWidget {
                         backgroundImage: NetworkImage(
                             'https://randomuser.me/api/portraits/men/2.jpg'),
                       ),
-                      // Add more contributors' avatars here
+                      // Add more Likes' avatars here
                     ],
                   ),
                 ),
-                // "150 contributors" Text
+                // "150 Likes" Text
               ],
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 0),
               child: SizedBox(
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 221, 218, 218),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const Text(
-                    '20 contributors',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 12,
-                    ),
-                  ),
-                ),
               ),
             ),
           ],

@@ -12,13 +12,12 @@ class FundRaising extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return SafeArea(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text('Fund Raisings', style: TextStyle(fontSize: 20)),
-          const SizedBox(height: 8),
+          const SizedBox(height: 0),
           ListView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
