@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import '../../controller/userposts_controller.dart';
 import '../../models/posts.dart';
 
-class ProfilePosts extends StatelessWidget {
-  const ProfilePosts({
+class ProfilePosts2 extends StatelessWidget {
+  const ProfilePosts2({
     super.key,
   });
 
@@ -35,7 +35,7 @@ class ProfilePosts extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: LinearProgressIndicator(
-                value: 20 / 200, // Raised amount / Total amount
+                value: 150 / 200, // Raised amount / Total amount
                 backgroundColor: Colors.grey[200],
                 valueColor: const AlwaysStoppedAnimation<Color>(
                     Color.fromRGBO(88, 101, 242, 1.0)),
@@ -43,9 +43,9 @@ class ProfilePosts extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            // "Liked by Huge and 45 others" Text
+            // "Liked by Huge and 200 others" Text
             const Text(
-              'Liked by Huge and 200 others',
+              'Liked by Huge and 233 others',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 10,
@@ -93,7 +93,7 @@ class ProfilePosts extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Text(
-                    '20 contributors',
+                    '150 contributors',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
